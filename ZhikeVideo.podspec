@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZhikeVideo"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "video for iOS develop"
 
   s.homepage     = "https://github.com/smartliuliu/ZhikeAVVideo"
