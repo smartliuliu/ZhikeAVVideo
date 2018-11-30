@@ -36,8 +36,6 @@
 - (ZKSliderView *)fastProgressView {
     if (!_fastProgressView) {
         _fastProgressView = [[ZKSliderView alloc] init];
-        _fastProgressView.backgroundColor = [UIColor purpleColor];
-        _fastProgressView.bufferTrackTintColor = [UIColor redColor];
         _fastProgressView.maximumTrackTintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
         _fastProgressView.minimumTrackTintColor = [UIColor greenColor];
         _fastProgressView.sliderHeight = kScalePhone6Value(2);

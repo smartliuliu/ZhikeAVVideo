@@ -8,6 +8,7 @@
 
 #import "ZhikePlayer.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "UIImage+BundleImage.h"
 
 @interface MyVideoPlayer : UIView
 
@@ -98,7 +99,7 @@ static NSString *const kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (!image) {
                     [self.bgImageView sd_setImageWithURL:[NSURL URLWithString:self.coverImageUrl]
-                                        placeholderImage:[UIImage imageNamed:@""]];
+                                        placeholderImage:[UIImage getImage:@""]];
                 } else {
                     self.bgImageView.image = image;
                 }
@@ -415,7 +416,7 @@ static NSString *const kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
     if (isnan(totalBuffer)) {
       totalBuffer = 0.0;
     }
-    NSLog(@"共缓冲：%.2f",totalBuffer);
+    // NSLog(@"共缓冲：%.2f",totalBuffer);
     return totalBuffer;
 }
 
@@ -423,7 +424,7 @@ static NSString *const kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
 - (void)updateDuration:(CMTime)time {
     self.currentTime = CMTimeGetSeconds(time);
     self.totalTime = CMTimeGetSeconds([self.playerItem duration]);
-//    NSLog(@"当前已经播放%.2fs.",self.currentTime);
+    NSLog(@"当前已经播放%.2fs.",self.currentTime);
     if (self.playDelegate && [self.playDelegate respondsToSelector:@selector(zhikeVideo:playCurrentTime:durationTime:)]) {
         [self.playDelegate zhikeVideo:self playCurrentTime:self.currentTime durationTime:self.totalTime];
     }

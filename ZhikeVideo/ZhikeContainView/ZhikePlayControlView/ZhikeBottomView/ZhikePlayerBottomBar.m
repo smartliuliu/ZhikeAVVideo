@@ -7,6 +7,7 @@
 //
 
 #import "ZhikePlayerBottomBar.h"
+#import "UIImage+BundleImage.h"
 
 @interface ZhikePlayerBottomBar ()
 
@@ -59,8 +60,8 @@
     if (!_playSwitchBtn) {
         _playSwitchBtn = [LargeButton buttonWithType:UIButtonTypeCustom];
         _playSwitchBtn.dx = -10;
-        [_playSwitchBtn setImage:[UIImage imageNamed:@"zkicon_play"] forState:UIControlStateNormal];
-        [_playSwitchBtn setImage:[UIImage imageNamed:@"zkicon_pause"] forState:UIControlStateSelected];
+        [_playSwitchBtn setImage:[UIImage getImage:@"zkicon_play"] forState:UIControlStateNormal];
+        [_playSwitchBtn setImage:[UIImage getImage:@"zkicon_pause"] forState:UIControlStateSelected];
         [_playSwitchBtn addTarget:self action:@selector(playClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _playSwitchBtn;
@@ -83,7 +84,7 @@
         _sliderView.bufferTrackTintColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
         _sliderView.maximumTrackTintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.6];
         _sliderView.minimumTrackTintColor = [UIColor greenColor];
-        [_sliderView setThumbImage:[UIImage imageNamed:@"zkicon_slider"] forState:UIControlStateNormal];
+        [_sliderView setThumbImage:[UIImage getImage:@"zkicon_slider"] forState:UIControlStateNormal];
         _sliderView.sliderHeight = kScalePhone6Value(2);
     }
     return _sliderView;
@@ -104,7 +105,7 @@
     if (!_fullScreenBtn) {
         _fullScreenBtn = [LargeButton buttonWithType:UIButtonTypeCustom];
         _fullScreenBtn.dx = -10;
-        [_fullScreenBtn setImage:[UIImage imageNamed:@"zkicon_fullscreen"] forState:UIControlStateNormal];
+        [_fullScreenBtn setImage:[UIImage getImage:@"zkicon_fullscreen"] forState:UIControlStateNormal];
         [_fullScreenBtn addTarget:self action:@selector(fullBtnClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _fullScreenBtn;
@@ -132,7 +133,7 @@
 
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
-        _bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zkicon_bottom_shadow"]];
+        _bgImageView = [[UIImageView alloc] initWithImage:[UIImage getImage:@"zkicon_bottom_shadow"]];
         _bgImageView.hidden = YES;
     }
     

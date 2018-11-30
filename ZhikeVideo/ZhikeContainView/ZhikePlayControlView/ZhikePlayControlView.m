@@ -65,8 +65,8 @@
 - (UIButton *)centerPlayBtn {
     if (!_centerPlayBtn) {
         _centerPlayBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_centerPlayBtn setImage:[UIImage imageNamed:@"zkicon_center_play"] forState:UIControlStateNormal];
-        [_centerPlayBtn setImage:[UIImage imageNamed:@"zkicon_center_pause"] forState:UIControlStateSelected];
+        [_centerPlayBtn setImage:[UIImage getImage:@"zkicon_center_play"] forState:UIControlStateNormal];
+        [_centerPlayBtn setImage:[UIImage getImage:@"zkicon_center_pause"] forState:UIControlStateSelected];
     }
     
     return _centerPlayBtn;

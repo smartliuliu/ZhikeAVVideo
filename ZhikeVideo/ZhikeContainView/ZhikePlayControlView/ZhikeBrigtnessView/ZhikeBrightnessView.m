@@ -7,6 +7,7 @@
 
 #import "ZhikeBrightnessView.h"
 #import "ZKHeader.h"
+#import "UIImage+BundleImage.h"
 
 @interface ZhikeBrightnessView ()
 
@@ -57,7 +58,7 @@ static ZhikeBrightnessView *instance;
 -(UIImageView *)signImageView {
     if (!_signImageView) {
         _signImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
-        _signImageView.image = [UIImage imageNamed:@"zkicon_brightness"];
+        _signImageView.image = [UIImage getImage:@"zkicon_brightness"];
     }
     
     return _signImageView;

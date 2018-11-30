@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "LargeButton.h"
+#import "UIImage+BundleImage.h"
+
 /** 顶部控制View */
 @interface ZhikePlayerTopBar : UIView
 

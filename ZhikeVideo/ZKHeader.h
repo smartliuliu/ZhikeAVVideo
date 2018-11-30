@@ -32,6 +32,4 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 //底部安全区域的高度  适配iPhone X
 #define kSafeAreaInsetsBottom ((kIS_PhoneXAll) ? (34) : (0))
 
-
-
 #endif /* ZKHeader_h */

@@ -275,7 +275,7 @@
     _coverImageUrl = coverImageUrl;
     self.player.coverImageUrl = coverImageUrl;
     [self.coverImageView sd_setImageWithURL:[NSURL URLWithString:_coverImageUrl]
-                           placeholderImage:[UIImage imageNamed:@""]];
+                           placeholderImage:[UIImage getImage:@""]];
 }
 
 - (void)setShouldAutorotate:(BOOL)shouldAutorotate {

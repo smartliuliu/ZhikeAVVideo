@@ -73,7 +73,7 @@
 
 - (UIImageView *)bgImageView {
     if (!_bgImageView) {
-        _bgImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zkicon_top_shadow"]];
+        _bgImageView = [[UIImageView alloc] initWithImage:[UIImage getImage:@"zkicon_top_shadow"]];
     }
     
     return _bgImageView;
@@ -84,7 +84,7 @@
     if (!_backBtn) {
         _backBtn = [[LargeButton alloc] init];
         _backBtn.dx = -20;
-        [_backBtn setImage:[UIImage imageNamed:@"zkicon_back"] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage getImage:@"zkicon_back"] forState:UIControlStateNormal];
     }
     
     return _backBtn;
