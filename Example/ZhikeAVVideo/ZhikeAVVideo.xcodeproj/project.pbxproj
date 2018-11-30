@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5AE4B9FB21A803B90060C0F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4B9FA21A803B90060C0F8 /* AppDelegate.m */; };
+		5AE4B9FE21A803B90060C0F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4B9FD21A803B90060C0F8 /* ViewController.m */; };
+		5AE4BA0121A803B90060C0F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE4B9FF21A803B90060C0F8 /* Main.storyboard */; };
+		5AE4BA0321A803BA0060C0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AE4BA0221A803BA0060C0F8 /* Assets.xcassets */; };
+		5AE4BA0621A803BA0060C0F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AE4BA0421A803BA0060C0F8 /* LaunchScreen.storyboard */; };
+		5AE4BA0921A803BA0060C0F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4BA0821A803BA0060C0F8 /* main.m */; };
+		5AE4BA1321A803BB0060C0F8 /* ZhikeAVVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4BA1221A803BB0060C0F8 /* ZhikeAVVideoTests.m */; };
+		5AE4BA1E21A803BB0060C0F8 /* ZhikeAVVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4BA1D21A803BB0060C0F8 /* ZhikeAVVideoUITests.m */; };
+		5AE4BA8621A804EA0060C0F8 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE4BA8521A804E90060C0F8 /* TestViewController.m */; };
+		F3D3FBC6E59EF77304439F13 /* libPods-ZhikeAVVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C8F56C8F0D294BB3FD7534 /* libPods-ZhikeAVVideo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AE4BA0F21A803BB0060C0F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AE4B9EE21A803B90060C0F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AE4B9F521A803B90060C0F8;
+			remoteInfo = ZhikeAVVideo;
+		};
+		5AE4BA1A21A803BB0060C0F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AE4B9EE21A803B90060C0F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AE4B9F521A803B90060C0F8;
+			remoteInfo = ZhikeAVVideo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5AE4B9F621A803B90060C0F8 /* ZhikeAVVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhikeAVVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4B9F921A803B90060C0F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5AE4B9FA21A803B90060C0F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5AE4B9FC21A803B90060C0F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5AE4B9FD21A803B90060C0F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5AE4BA0021A803B90060C0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AE4BA0221A803BA0060C0F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AE4BA0521A803BA0060C0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AE4BA0721A803BA0060C0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE4BA0821A803BA0060C0F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AE4BA0E21A803BB0060C0F8 /* ZhikeAVVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhikeAVVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4BA1221A803BB0060C0F8 /* ZhikeAVVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhikeAVVideoTests.m; sourceTree = "<group>"; };
+		5AE4BA1421A803BB0060C0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE4BA1921A803BB0060C0F8 /* ZhikeAVVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZhikeAVVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE4BA1D21A803BB0060C0F8 /* ZhikeAVVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhikeAVVideoUITests.m; sourceTree = "<group>"; };
+		5AE4BA1F21A803BB0060C0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AE4BA8421A804E90060C0F8 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestViewController.h; path = ZhikeAVVideo/TestViewController.h; sourceTree = SOURCE_ROOT; };
+		5AE4BA8521A804E90060C0F8 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestViewController.m; path = ZhikeAVVideo/TestViewController.m; sourceTree = SOURCE_ROOT; };
+		993C75D4C6EE824B324D571B /* Pods-ZhikeAVVideo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhikeAVVideo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhikeAVVideo/Pods-ZhikeAVVideo.release.xcconfig"; sourceTree = "<group>"; };
+		A062ABD2ADE9264A8445231D /* Pods-ZhikeAVVideo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhikeAVVideo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhikeAVVideo/Pods-ZhikeAVVideo.debug.xcconfig"; sourceTree = "<group>"; };
+		B1C8F56C8F0D294BB3FD7534 /* libPods-ZhikeAVVideo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZhikeAVVideo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AE4B9F321A803B90060C0F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D3FBC6E59EF77304439F13 /* libPods-ZhikeAVVideo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA0B21A803BB0060C0F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA1621A803BB0060C0F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00469C04A9E8FB03FCE9DBBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8F56C8F0D294BB3FD7534 /* libPods-ZhikeAVVideo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AE4B9ED21A803B90060C0F8 = {
+			isa = PBXGroup;
+			children = (
+				5AE4B9F821A803B90060C0F8 /* ZhikeAVVideo */,
+				5AE4BA1121A803BB0060C0F8 /* ZhikeAVVideoTests */,
+				5AE4BA1C21A803BB0060C0F8 /* ZhikeAVVideoUITests */,
+				5AE4B9F721A803B90060C0F8 /* Products */,
+				AD33AAD1CE019E843D12AA3A /* Pods */,
+				00469C04A9E8FB03FCE9DBBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AE4B9F721A803B90060C0F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4B9F621A803B90060C0F8 /* ZhikeAVVideo.app */,
+				5AE4BA0E21A803BB0060C0F8 /* ZhikeAVVideoTests.xctest */,
+				5AE4BA1921A803BB0060C0F8 /* ZhikeAVVideoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AE4B9F821A803B90060C0F8 /* ZhikeAVVideo */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4B9F921A803B90060C0F8 /* AppDelegate.h */,
+				5AE4B9FA21A803B90060C0F8 /* AppDelegate.m */,
+				5AE4B9FC21A803B90060C0F8 /* ViewController.h */,
+				5AE4B9FD21A803B90060C0F8 /* ViewController.m */,
+				5AE4BA8421A804E90060C0F8 /* TestViewController.h */,
+				5AE4BA8521A804E90060C0F8 /* TestViewController.m */,
+				5AE4B9FF21A803B90060C0F8 /* Main.storyboard */,
+				5AE4BA0221A803BA0060C0F8 /* Assets.xcassets */,
+				5AE4BA0421A803BA0060C0F8 /* LaunchScreen.storyboard */,
+				5AE4BA0721A803BA0060C0F8 /* Info.plist */,
+				5AE4BA0821A803BA0060C0F8 /* main.m */,
+			);
+			path = ZhikeAVVideo;
+			sourceTree = "<group>";
+		};
+		5AE4BA1121A803BB0060C0F8 /* ZhikeAVVideoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4BA1221A803BB0060C0F8 /* ZhikeAVVideoTests.m */,
+				5AE4BA1421A803BB0060C0F8 /* Info.plist */,
+			);
+			path = ZhikeAVVideoTests;
+			sourceTree = "<group>";
+		};
+		5AE4BA1C21A803BB0060C0F8 /* ZhikeAVVideoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AE4BA1D21A803BB0060C0F8 /* ZhikeAVVideoUITests.m */,
+				5AE4BA1F21A803BB0060C0F8 /* Info.plist */,
+			);
+			path = ZhikeAVVideoUITests;
+			sourceTree = "<group>";
+		};
+		AD33AAD1CE019E843D12AA3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A062ABD2ADE9264A8445231D /* Pods-ZhikeAVVideo.debug.xcconfig */,
+				993C75D4C6EE824B324D571B /* Pods-ZhikeAVVideo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AE4B9F521A803B90060C0F8 /* ZhikeAVVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4BA2221A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideo" */;
+			buildPhases = (
+				6910C73002F67C22F7E70495 /* [CP] Check Pods Manifest.lock */,
+				5AE4B9F221A803B90060C0F8 /* Sources */,
+				5AE4B9F321A803B90060C0F8 /* Frameworks */,
+				5AE4B9F421A803B90060C0F8 /* Resources */,
+				3ADBD9CC9C1EAB394B9A9276 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZhikeAVVideo;
+			productName = ZhikeAVVideo;
+			productReference = 5AE4B9F621A803B90060C0F8 /* ZhikeAVVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AE4BA0D21A803BB0060C0F8 /* ZhikeAVVideoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4BA2521A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideoTests" */;
+			buildPhases = (
+				5AE4BA0A21A803BB0060C0F8 /* Sources */,
+				5AE4BA0B21A803BB0060C0F8 /* Frameworks */,
+				5AE4BA0C21A803BB0060C0F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE4BA1021A803BB0060C0F8 /* PBXTargetDependency */,
+			);
+			name = ZhikeAVVideoTests;
+			productName = ZhikeAVVideoTests;
+			productReference = 5AE4BA0E21A803BB0060C0F8 /* ZhikeAVVideoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AE4BA1821A803BB0060C0F8 /* ZhikeAVVideoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4BA2821A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideoUITests" */;
+			buildPhases = (
+				5AE4BA1521A803BB0060C0F8 /* Sources */,
+				5AE4BA1621A803BB0060C0F8 /* Frameworks */,
+				5AE4BA1721A803BB0060C0F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AE4BA1B21A803BB0060C0F8 /* PBXTargetDependency */,
+			);
+			name = ZhikeAVVideoUITests;
+			productName = ZhikeAVVideoUITests;
+			productReference = 5AE4BA1921A803BB0060C0F8 /* ZhikeAVVideoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AE4B9EE21A803B90060C0F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = liu;
+				TargetAttributes = {
+					5AE4B9F521A803B90060C0F8 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					5AE4BA0D21A803BB0060C0F8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5AE4B9F521A803B90060C0F8;
+					};
+					5AE4BA1821A803BB0060C0F8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5AE4B9F521A803B90060C0F8;
+					};
+				};
+			};
+			buildConfigurationList = 5AE4B9F121A803B90060C0F8 /* Build configuration list for PBXProject "ZhikeAVVideo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AE4B9ED21A803B90060C0F8;
+			productRefGroup = 5AE4B9F721A803B90060C0F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AE4B9F521A803B90060C0F8 /* ZhikeAVVideo */,
+				5AE4BA0D21A803BB0060C0F8 /* ZhikeAVVideoTests */,
+				5AE4BA1821A803BB0060C0F8 /* ZhikeAVVideoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AE4B9F421A803B90060C0F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4BA0621A803BA0060C0F8 /* LaunchScreen.storyboard in Resources */,
+				5AE4BA0321A803BA0060C0F8 /* Assets.xcassets in Resources */,
+				5AE4BA0121A803B90060C0F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA0C21A803BB0060C0F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA1721A803BB0060C0F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ADBD9CC9C1EAB394B9A9276 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZhikeAVVideo/Pods-ZhikeAVVideo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ZhikeVideo/ZhikeVideo.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZhikeVideo.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZhikeAVVideo/Pods-ZhikeAVVideo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6910C73002F67C22F7E70495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZhikeAVVideo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AE4B9F221A803B90060C0F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4BA8621A804EA0060C0F8 /* TestViewController.m in Sources */,
+				5AE4B9FE21A803B90060C0F8 /* ViewController.m in Sources */,
+				5AE4BA0921A803BA0060C0F8 /* main.m in Sources */,
+				5AE4B9FB21A803B90060C0F8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA0A21A803BB0060C0F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4BA1321A803BB0060C0F8 /* ZhikeAVVideoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AE4BA1521A803BB0060C0F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE4BA1E21A803BB0060C0F8 /* ZhikeAVVideoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AE4BA1021A803BB0060C0F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AE4B9F521A803B90060C0F8 /* ZhikeAVVideo */;
+			targetProxy = 5AE4BA0F21A803BB0060C0F8 /* PBXContainerItemProxy */;
+		};
+		5AE4BA1B21A803BB0060C0F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AE4B9F521A803B90060C0F8 /* ZhikeAVVideo */;
+			targetProxy = 5AE4BA1A21A803BB0060C0F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AE4B9FF21A803B90060C0F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE4BA0021A803B90060C0F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AE4BA0421A803BA0060C0F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AE4BA0521A803BA0060C0F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AE4BA2021A803BB0060C0F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5AE4BA2121A803BB0060C0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AE4BA2321A803BB0060C0F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A062ABD2ADE9264A8445231D /* Pods-ZhikeAVVideo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZhikeAVVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartstudy.avvideo11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AE4BA2421A803BB0060C0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993C75D4C6EE824B324D571B /* Pods-ZhikeAVVideo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ZhikeAVVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartstudy.avvideo11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5AE4BA2621A803BB0060C0F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DJA76XZAZ;
+				INFOPLIST_FILE = ZhikeAVVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liu.zhao.ZhikeAVVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhikeAVVideo.app/ZhikeAVVideo";
+			};
+			name = Debug;
+		};
+		5AE4BA2721A803BB0060C0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DJA76XZAZ;
+				INFOPLIST_FILE = ZhikeAVVideoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liu.zhao.ZhikeAVVideoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZhikeAVVideo.app/ZhikeAVVideo";
+			};
+			name = Release;
+		};
+		5AE4BA2921A803BB0060C0F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DJA76XZAZ;
+				INFOPLIST_FILE = ZhikeAVVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liu.zhao.ZhikeAVVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZhikeAVVideo;
+			};
+			name = Debug;
+		};
+		5AE4BA2A21A803BB0060C0F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DJA76XZAZ;
+				INFOPLIST_FILE = ZhikeAVVideoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = liu.zhao.ZhikeAVVideoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZhikeAVVideo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AE4B9F121A803B90060C0F8 /* Build configuration list for PBXProject "ZhikeAVVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4BA2021A803BB0060C0F8 /* Debug */,
+				5AE4BA2121A803BB0060C0F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4BA2221A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4BA2321A803BB0060C0F8 /* Debug */,
+				5AE4BA2421A803BB0060C0F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4BA2521A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4BA2621A803BB0060C0F8 /* Debug */,
+				5AE4BA2721A803BB0060C0F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AE4BA2821A803BB0060C0F8 /* Build configuration list for PBXNativeTarget "ZhikeAVVideoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AE4BA2921A803BB0060C0F8 /* Debug */,
+				5AE4BA2A21A803BB0060C0F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AE4B9EE21A803B90060C0F8 /* Project object */;
+}
