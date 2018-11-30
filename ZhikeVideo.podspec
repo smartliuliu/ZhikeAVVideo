@@ -12,12 +12,13 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/smartliuliu/ZhikeAVVideo.git", :tag => s.version }
   s.source_files  = "ZhikeVideo/**/*.{h,m}",'Pods/**/*.{h,m}'
+  s.resource_bundle = { 'ZhikeVideo' => ['ZhikeVideo/Resources/*.png'] }
   #s.exclude_files = "ZhikeVideo/Exclude"
-  #s.public_header_files = "ZhikeVideo/**/*.h"
+  s.public_header_files = "ZhikeVideo/**/*.h"
 
   s.frameworks = 'UIKit', 'AVFoundation'
   s.dependency 'Masonry'
   s.dependency 'SDWebImage'
-#s.requires_arc = true
+  s.requires_arc = true
 
 end
