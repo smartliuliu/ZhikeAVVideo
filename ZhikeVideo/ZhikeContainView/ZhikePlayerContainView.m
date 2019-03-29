@@ -67,7 +67,10 @@
     UIInterfaceOrientation orientation = [self getStatusBarOrientation];
     if (_isOnlyFullScreen) {
         BOOL isLandScape = (orientation == UIDeviceOrientationLandscapeLeft || orientation == UIDeviceOrientationLandscapeRight);
-        if (!isLandScape) {
+        
+        BOOL deviceIsLandScape = [ZhikeOrientation getOrientation] == UIInterfaceOrientationLandscapeLeft || [ZhikeOrientation getOrientation] == UIInterfaceOrientationLandscapeRight || [ZhikeOrientation getOrientation] == UIInterfaceOrientationMaskLandscape;
+        
+        if (!isLandScape || !deviceIsLandScape) {
             [ZhikeOrientation setOrientation:UIInterfaceOrientationMaskLandscape];
             [ZhikeOrientation changeOrientation:UIInterfaceOrientationLandscapeRight];
         }
@@ -255,6 +258,7 @@
 
 - (void)failBtnClick {
     [self.player reloadNowPlayer];
+    [self.controlView changeIsShowBottomView:YES];
 }
 
 #pragma mark - Set
@@ -483,12 +487,11 @@
 
 #pragma mark - ZhikePlayerDelegate
 - (void)zhikeVideo:(id)videoPlayer loadState:(ZKPlayerLoadState)state {
-    //    ZKPlayerLoadStateUnknown = 0,
-    //    ZKPlayerLoadStatePrepare,         // 调用开始播放（不一定成功）
-    //    ZKPlayerLoadStatePlayDidChange,   // 准备开始播放了
-    //    ZKPlayerLoadStatePlayable,       // 加载状态变成了缓存数据足够开始播放，但是视频并没有缓存完全
-    //    ZKPlayerLoadStatePlaythroughOK, // 加载完成，即将播放
-    //    ZKPlayerLoadStateStalled , // 可能由于网速不好等因素导致了暂停
+//    ZKPlayerLoadStateUnknown = 0,
+//    ZKPlayerLoadStatePrepare,         // 调用开始播放（不一定成功）
+//    ZKPlayerLoadStatePlayable,       // 加载状态变成了缓存数据足够开始播放，但是视频并没有缓存完全
+//    ZKPlayerLoadStatePlaythroughOK, // 加载完成，即将播放
+//    ZKPlayerLoadStateStalled , // 可能由于网速不好等因素导致了暂停
     if (state == ZKPlayerLoadStatePrepare) {
         // 调用播放器
         self.coverImageView.hidden = NO;
@@ -552,8 +555,13 @@
 }
 
 - (void)zhikeVideo:(id)videoPlayer playCurrentTime:(NSTimeInterval)currentTime durationTime:(NSTimeInterval)duration {
-    // todo zl 我删除试试
-    //    self.durationTime = duration;
+    if (self.durationTime != duration) {
+        self.durationTime = duration;
+        if (self.delegate && [self.delegate respondsToSelector:@selector(zhikePlayerDurationTime:sender:)]) {
+            [self.delegate zhikePlayerDurationTime:self.durationTime sender:self];
+        }
+    }
+    
     if (self.delegate && [self.delegate respondsToSelector:@selector(zhikePlayerCurrentTime:sender:)]) {
         [self.delegate zhikePlayerCurrentTime:currentTime sender:self];
     }
@@ -759,8 +767,11 @@
         [self.controlView changeIsShowBottomView:YES];
     } else {
         
-        if (self.player) {
-            [self.player shutdown];
+        // fix: RN横屏进入， 点击返回按钮crash
+        if (!self.isRN) {
+            if (self.player) {
+                [self.player shutdown];
+            }
         }
         
         BOOL enterIsLandscape = self.lastOrientation == UIInterfaceOrientationLandscapeLeft || self.lastOrientation == UIInterfaceOrientationLandscapeRight;

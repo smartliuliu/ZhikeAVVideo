@@ -364,13 +364,20 @@ static NSString *const kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
         duration = 0.0;
     }
     self.totalTime = duration;
-    
-    self.loadState = ZKPlayerLoadStatePlaythroughOK;
+    __weak typeof(self) weakSelf = self;
     
     if (self.seekTime) {
-        [self seekToTime:self.seekTime completionHandler:nil];
+        [self.myPlayer pause];
+        [self seekToTime:self.seekTime completionHandler:^(BOOL finished) {
+            [weakSelf playerItemStatusReadyToPlay];
+        }];
         self.seekTime = 0;
+    } else {
+        [self playerItemStatusReadyToPlay];
     }
+}
+
+- (void)playerItemStatusReadyToPlay {
     if(self.isPlaying){
         [self play];
         self.myPlayer.muted = self.muted;
@@ -382,6 +389,8 @@ static NSString *const kPlaybackLikelyToKeepUp = @"playbackLikelyToKeepUp";
         
         [self.playDelegate zhikeVideo:self playCurrentTime:self.currentTime durationTime:self.totalTime];
     }
+    
+    self.loadState = ZKPlayerLoadStatePlaythroughOK;
 }
 
 /**  缓冲较差时候回调这里 */

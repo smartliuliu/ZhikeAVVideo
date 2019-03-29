@@ -87,6 +87,9 @@
  */
 @property (nonatomic, assign) BOOL shouldAutorotate;
 
+/** rn特殊配置 */
+@property (nonatomic, assign) BOOL isRN;
+
 
 
 #pragma mark - Method
